@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'mxh.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mxh',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': 'd479jhcc9pdd6q',
+        'USER': 'btrtyuulpdbwuq',
+        'PASSWORD': '587c980fffe54ca67f9c1aaf24cb07ca33f0aac86924742cc1c4431bb2bdda55',
+        'HOST': 'ec2-34-196-238-94.compute-1.amazonaws.com',
+        'PORT': 5432,
         'OPTIONS':{
             'init_command':"SET sql_mode='STRICT_TRANS_TABLES'",
         }
