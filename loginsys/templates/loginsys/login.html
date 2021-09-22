@@ -1,0 +1,30 @@
+<h1>Trang Đăng Nhập</h1>
+<hr/>
+<form action="" method="POST">
+    {% csrf_token %}
+    <table border="1">
+        <tr>
+            <td>
+                User Name
+            </td>
+            <td><input type="text" placeholder="Enter User Name... " name="Email" required></td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td><input type="password" placeholder="Enter Password..." name="Pwd" required></td>
+        </tr>        
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Login</button>
+            </td>
+        </tr>
+    </table>
+    {% if messages %}
+    {% for msg in messages %}
+    <b>{{msg}}</b>
+    {% endfor %}
+    {% endif %}
+</form>

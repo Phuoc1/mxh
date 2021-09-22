@@ -1,0 +1,211 @@
+{% extends 'home/base.html' %}
+    {% load static %}
+    {% block content %}      
+        <div class="left-sidebar-watch">
+            <div class="imp-links">
+                <a href="{% url 'home:home' %}"><img src="{% static 'images/home.png' %}">Home</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Donors</p>
+                <a href="#"><img src="{% static 'images/ntt-pepsi.jpeg' %}">Pepsi</a>
+                <a href="#"><img src="{% static 'images/coca-cola.png' %}">Coca-Cola</a>
+                <a href="#"><img src="{% static 'images/mercedes.jpg' %}">Mercedes</a>
+                <a href="#"><img src="{% static 'images/vingroup.jpg' %}">VinGroup</a>
+                <a href="#"><img src="{% static 'images/ntt-pepsi.jpeg' %}">Pepsi</a>
+                <a href="#"><img src="{% static 'images/coca-cola.png' %}">Coca-Cola</a>
+                <a href="#"><img src="{% static 'images/mercedes.jpg' %}">Mercedes</a>
+                <a href="#"><img src="{% static 'images/vingroup.jpg' %}">VinGroup</a>
+                <a href="#"><img src="{% static 'images/ntt-pepsi.jpeg' %}">Pepsi</a>
+                <a href="#"><img src="{% static 'images/coca-cola.png' %}">Coca-Cola</a>
+                <a href="#"><img src="{% static 'images/mercedes.jpg' %}">Mercedes</a>
+                <a href="#"><img src="{% static 'images/vingroup.jpg' %}">VinGroup</a>
+            </div>        
+        </div>
+
+        <!--------------- main-content-------------------------------- -->
+        <div class="main-content-watch">
+            <div class="write-post-container-watch">
+                <div class="user-profile-watch">
+                    <a href="{% url 'watch:watch' %}"> 
+                        <img src="{% static 'images/video.png' %}">
+                        <div>
+                            <a>Watch</a>
+                        </div>
+                    </a>
+                </div> 
+                <div class="search-box">
+                    <img src="{% static 'images/search.png' %}">
+                    <input type="text" placeholder="Search Watch">
+                </div>           
+            </div>                 
+            <!-- Start Post-container----------------- -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="{% static 'images/profile-pic.jpg' %}">
+                        <div>
+                            <p>{{ user.username }}</p>
+                            <span>June 24 2021, 13:40 .</span><i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div> 
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a> 
+                </div>
+                
+                <p class="post-text">4K Nature Documentary Film - Maui, Hawaii - Short Preview Video #EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <video controls loop width="100%" poster="{% static 'images/Anh-thien-nhien-1.jpg' %}">
+                    <source src="{% static 'video/thiennhien4kwebm.webm' %}">
+                </video>
+                <!-- START TU SUA ------------------------------------------ -->
+                <div class="post-row">
+                    <div class="left-like">
+                        <div class="like"><a href="#"><img src="{% static 'images/like.png' %}"></a>120</div>
+                    </div>
+                    <div class="right-comments">
+                        <div class="comments">45 bình luận<a href="#"><img src="{% static 'images/comments.png' %}"></a></div>
+                        <div class="share">20 lượt chia sẻ<a href="#"><img src="{% static 'images/share.png' %}"></a></div>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="post-row2">
+                    <div class="activity-icons2">
+                        <div class="like-row2"><a href="#"><img src="{% static 'images/yeslike.png' %}"></a>Thích</div>                        
+                        <div class="comments-row2"><a href="#"><img src="{% static 'images/comments.png' %}"></a>Bình luận</div>
+                        <div class="share-row2"><a href="#"><img src="{% static 'images/share.png' %}"></a>Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon2"> 
+                        <a href="#"><img src="{% static 'images/profile-pic.jpg' %}"><i class="fas fa-caret-down"></i></a>
+                    </div>                   
+                </div>           
+                <!-- END TU SUA ------------------------------------------ -->
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="{% static 'images/profile-pic.jpg' %}">
+                        <div>
+                            <p>Gia Phước</p>
+                            <span>June 24 2021, 13:40 .</span><i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div> 
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a> 
+                </div>
+                
+                <p class="post-text">4K Nature Documentary Film - Maui, Hawaii - Short Preview Video #EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <video controls loop width="100%" poster="{% static 'images/Anh-thien-nhien-1.jpg' %}">
+                    <source src="{% static 'video/thiennhien4kwebm.webm' %}">
+                </video>
+                <!-- START TU SUA ------------------------------------------ -->
+                <div class="post-row">
+                    <div class="left-like">
+                        <div class="like"><a href="#"><img src="{% static 'images/like.png' %}"></a>120</div>
+                    </div>
+                    <div class="right-comments">
+                        <div class="comments">45 bình luận<a href="#"><img src="{% static 'images/comments.png' %}"></a></div>
+                        <div class="share">20 lượt chia sẻ<a href="#"><img src="{% static 'images/share.png' %}"></a></div>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="post-row2">
+                    <div class="activity-icons2">
+                        <div class="like-row2"><a href="#"><img src="{% static 'images/yeslike.png' %}"></a>Thích</div>                        
+                        <div class="comments-row2"><a href="#"><img src="{% static 'images/comments.png' %}"></a>Bình luận</div>
+                        <div class="share-row2"><a href="#"><img src="{% static 'images/share.png' %}"></a>Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon2"> 
+                        <a href="#"><img src="{% static 'images/profile-pic.jpg' %}"><i class="fas fa-caret-down"></i></a>
+                    </div>                   
+                </div>           
+                <!-- END TU SUA ------------------------------------------ -->
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="{% static 'images/profile-pic.jpg' %}">
+                        <div>
+                            <p>Gia Phước</p>
+                            <span>June 24 2021, 13:40 .</span><i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div> 
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a> 
+                </div>
+                
+                <p class="post-text">4K Nature Documentary Film - Maui, Hawaii - Short Preview Video #EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <video controls loop width="100%" poster="{% static 'images/Anh-thien-nhien-1.jpg' %}">
+                    <source src="{% static 'video/thiennhien4kwebm.webm' %}">
+                </video>
+                <!-- START TU SUA ------------------------------------------ -->
+                <div class="post-row">
+                    <div class="left-like">
+                        <div class="like"><a href="#"><img src="{% static 'images/like.png' %}"></a>120</div>
+                    </div>
+                    <div class="right-comments">
+                        <div class="comments">45 bình luận<a href="#"><img src="{% static 'images/comments.png' %}"></a></div>
+                        <div class="share">20 lượt chia sẻ<a href="#"><img src="{% static 'images/share.png' %}"></a></div>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="post-row2">
+                    <div class="activity-icons2">
+                        <div class="like-row2"><a href="#"><img src="{% static 'images/yeslike.png' %}"></a>Thích</div>                        
+                        <div class="comments-row2"><a href="#"><img src="{% static 'images/comments.png' %}"></a>Bình luận</div>
+                        <div class="share-row2"><a href="#"><img src="{% static 'images/share.png' %}"></a>Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon2"> 
+                        <a href="#"><img src="{% static 'images/profile-pic.jpg' %}"><i class="fas fa-caret-down"></i></a>
+                    </div>                   
+                </div>           
+                <!-- END TU SUA ------------------------------------------ -->
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="{% static 'images/profile-pic.jpg' %}">
+                        <div>
+                            <p>Gia Phước</p>
+                            <span>June 24 2021, 13:40 .</span><i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div> 
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a> 
+                </div>
+                
+                <p class="post-text">4K Nature Documentary Film - Maui, Hawaii - Short Preview Video #EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <video controls loop width="100%" poster="{% static 'images/Anh-thien-nhien-1.jpg' %}">
+                    <source src="{% static 'video/thiennhien4kwebm.webm' %}">
+                </video>
+                <!-- START TU SUA ------------------------------------------ -->
+                <div class="post-row">
+                    <div class="left-like">
+                        <div class="like"><a href="#"><img src="{% static 'images/like.png' %}"></a>120</div>
+                    </div>
+                    <div class="right-comments">
+                        <div class="comments">45 bình luận<a href="#"><img src="{% static 'images/comments.png' %}"></a></div>
+                        <div class="share">20 lượt chia sẻ<a href="#"><img src="{% static 'images/share.png' %}"></a></div>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="post-row2">
+                    <div class="activity-icons2">
+                        <div class="like-row2"><a href="#"><img src="{% static 'images/yeslike.png' %}"></a>Thích</div>                        
+                        <div class="comments-row2"><a href="#"><img src="{% static 'images/comments.png' %}"></a>Bình luận</div>
+                        <div class="share-row2"><a href="#"><img src="{% static 'images/share.png' %}"></a>Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon2"> 
+                        <a href="#"><img src="{% static 'images/profile-pic.jpg' %}"><i class="fas fa-caret-down"></i></a>
+                    </div>                   
+                </div>           
+                <!-- END TU SUA ------------------------------------------ -->
+            </div>
+
+            
+            <!-- End Post-container----------------- -->
+            <button type="button" class="load-more-btn">End of post</button>
+
+
+        </div> 
+
+        <!--------------- right-sidebar-------------------------------- -->
+        <div class="right-sidebar-watch">
+            
+        </div>
+    {% endblock %}
+    

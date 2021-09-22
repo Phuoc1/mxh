@@ -1,0 +1,11 @@
+{% extends 'home/base.html' %}
+    {% load static %}
+    {% block content %}
+        <div class="register_ok" style='color:blue;'>
+            <h1>Chào mừng {{ username }} đến với mạng xã hội </h1>
+            <h1>Chúc bạn tham gia vui vẻ</h1>           
+            <a href="{% url 'home:login' %}" ><button class="nut_login_home"> Đăng nhập tham gia ngay </button></a>
+        </div>
+{% endblock %}
+        
+

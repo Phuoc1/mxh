@@ -1,0 +1,387 @@
+{% extends 'home/base.html' %}
+    {% load static %}
+    {% block content %}
+        <!--------------- left-sidebar-------------------------------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="{% url 'home:home' %}"><img src="{% static 'images/home.png' %}">Home</a>
+                <a href="#"><img src="{% static 'images/friends.png' %}">Friends</a>
+                <a href="#"><img src="{% static 'images/group1.png' %}">Group</a>
+                <a href="{% url 'watch:watch' %}"><img src="{% static 'images/video.png' %}">Watch</a>
+                <a href=""><img src="{% static 'images/video-short1.png' %}">Video Short</a>
+                <a href="#"><img src="{% static 'images/instagram.png' %}">Images</a>
+                <a href="#"><img src="{% static 'images/marketplace.png' %}">Marketplace</a>
+                <a href="#"><img src="{% static 'images/game3.png' %}">Game</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Donors</p>
+                <a href="#"><img src="{% static 'images/ntt-pepsi.jpeg' %}">Pepsi</a>
+                <a href="#"><img src="{% static 'images/coca-cola.png' %}">Coca-Cola</a>
+                <a href="#"><img src="{% static 'images/mercedes.jpg' %}">Mercedes</a>
+                <a href="#"><img src="{% static 'images/vingroup.jpg' %}">VinGroup</a>
+                <a href="#"><img src="{% static 'images/ntt-pepsi.jpeg' %}">Pepsi</a>
+                <a href="#"><img src="{% static 'images/coca-cola.png' %}">Coca-Cola</a>
+                <a href="#"><img src="{% static 'images/mercedes.jpg' %}">Mercedes</a>
+                <a href="#"><img src="{% static 'images/vingroup.jpg' %}">VinGroup</a>
+                <a href="#"><img src="{% static 'images/ntt-pepsi.jpeg' %}">Pepsi</a>
+                <a href="#"><img src="{% static 'images/coca-cola.png' %}">Coca-Cola</a>
+                <a href="#"><img src="{% static 'images/mercedes.jpg' %}">Mercedes</a>
+                <a href="#"><img src="{% static 'images/vingroup.jpg' %}">VinGroup</a>
+            </div>        
+        </div>
+
+        <!--------------- main-content-------------------------------- -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="{% static 'images/plus.png' %}">
+                    <p>Post Story</p>
+                </div>                
+                <div class="story story2">
+                    <img src="{% static 'images/jisoo.jpeg' %}">
+                    <p>Jisoo</p>
+                </div>                
+                <div class="story story3">
+                    <img src="{% static 'images/jennie.jpg' %}">
+                    <p>Jennie</p>
+                </div>                
+                <div class="story story4">
+                    <img src="{% static 'images/rose.jpg' %}">
+                    <p>Rose</p>
+                </div>                
+                <div class="story story5">
+                    <img src="{% static 'images/sontung.jpg' %}">
+                    <p>Sơn Tùng M-TP</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="{% static 'images/profile-pic.jpg' %}">
+                    <div>
+                        <p>{{ user.username }}</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+        <!--        <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Phuoc?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="{% static 'images/video-live.png' %}">Live Video</a>
+   bản chuẩn            <a href="#"><img src="{% static 'images/anh-video.png' %}">Photo/Video</a> 
+                        <a href="#"><img src="{% static 'images/feling.png' %}">Feling/Activity</a>
+                    </div>
+                </div> -->
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Phuoc?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#" class="live-video"><img src="{% static 'images/video-live.png' %}">Live Video</a>
+                        <a href="#" class="photo-video"><img src="{% static 'images/anh-video.png' %}">Photo/Video</a> 
+                        <a href="#" class="feling"><img src="{% static 'images/feling.png' %}">Feling/Activity</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Start Post-container----------------- -->
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="{% static 'images/profile-pic.jpg' %}">
+                        <div>
+                            <p>Gia Phước</p>
+                            <span>June 24 2021, 13:40 .</span><i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div> 
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a> 
+                </div>
+                
+                <p class="post-text">Subscribe <span>@Xin chào mọi</span> người đến với mạng xã hội của tôi.<a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <img src="{% static 'images/Anh-thien-nhien-1.jpg' %}" class="post-img">
+                <!-- START TU SUA ------------------------------------------ -->
+                <div class="post-row">
+                    <div class="left-like">
+                        <div class="like"><a href="#"><img src="{% static 'images/like.png' %}"></a>120</div>
+                    </div>
+                    <div class="right-comments">
+                        <div class="comments">45 bình luận<a href="#"><img src="{% static 'images/comments.png' %}"></a></div>
+                        <div class="share">20 lượt chia sẻ<a href="#"><img src="{% static 'images/share.png' %}"></a></div>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="post-row2">
+                    <div class="activity-icons2">
+                        <div class="like-row2"><a href="#"><img src="{% static 'images/yeslike.png' %}"></a>Thích</div>                        
+                        <div class="comments-row2"><a href="#"><img src="{% static 'images/comments.png' %}"></a>Bình luận</div>
+                        <div class="share-row2"><a href="#"><img src="{% static 'images/share.png' %}"></a>Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon2"> 
+                        <a href="#"><img src="{% static 'images/profile-pic.jpg' %}"><i class="fas fa-caret-down"></i></a>
+                    </div>                   
+                </div>           
+                <!-- END TU SUA ------------------------------------------ -->
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="{% static 'images/profile-pic.jpg' %}">
+                        <div>
+                            <p>Gia Phước</p>
+                            <span>June 24 2021, 13:40 .</span><i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div> 
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a> 
+                </div>
+               
+                <p class="post-text">4K Nature Documentary Film - Maui, Hawaii - Short Preview Video<a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <video controls loop width="100%" poster="{% static 'images/Anh-thien-nhien-1.jpg' %}">
+                    <source src="{% static 'video/thiennhien4kwebm.webm' %}">
+                </video>
+                
+                <div class="post-row">
+                    <div class="left-like">
+                        <div class="like"><a href="#"><img src="{% static 'images/like.png' %}"></a>58.280</div>
+                    </div>
+                    <div class="right-comments">
+                        <div class="comments">450 bình luận<a href="#"><img src="{% static 'images/comments.png' %}"></a></div>
+                        <div class="share">220 lượt chia sẻ<a href="#"><img src="{% static 'images/share.png' %}"></a></div>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="post-row2">
+                    <div class="activity-icons2">
+                        <div class="like-row2"><a href="#"><img src="{% static 'images/yeslike.png' %}"></a>Thích</div>                        
+                        <div class="comments-row2"><a href="#"><img src="{% static 'images/comments.png' %}"></a>Bình luận</div>
+                        <div class="share-row2"><a href="#"><img src="{% static 'images/share.png' %}"></a>Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon2"> 
+                        <a href="#"><img src="{% static 'images/profile-pic.jpg' %}"><i class="fas fa-caret-down"></i></a>
+                    </div>                   
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="{% static 'images/profile-pic.jpg' %}">
+                        <div>
+                            <p>Gia Phước</p>
+                            <span>June 24 2021, 13:40 .</span><i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div> 
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a> 
+                </div>
+                
+                <p class="post-text">Thích và chia sẻ mạng xã hội đến với bạn bè<span>@Xin chào mọi</span> người đến với mạng xã hội của tôi. Đăng lên trang của bạn. Cùng bình luận, chia sẻ <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <img src="{% static 'images/Anh-thien-nhien-3.jpg' %}" class="post-img">
+                <div class="post-row">
+                    <div class="left-like">
+                        <div class="like"><a href="#"><img src="{% static 'images/like.png' %}"></a>450k</div>
+                    </div>
+                    <div class="right-comments">
+                        <div class="comments">4k bình luận<a href="#"><img src="{% static 'images/comments.png' %}"></a></div>
+                        <div class="share">2k lượt chia sẻ<a href="#"><img src="{% static 'images/share.png' %}"></a></div>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="post-row2">
+                    <div class="activity-icons2">
+                        <div class="like-row2"><a href="#"><img src="{% static 'images/yeslike.png' %}"></a>Thích</div>                        
+                        <div class="comments-row2"><a href="#"><img src="{% static 'images/comments.png' %}"></a>Bình luận</div>
+                        <div class="share-row2"><a href="#"><img src="{% static 'images/share.png' %}"></a>Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon2"> 
+                        <a href="#"><img src="{% static 'images/profile-pic.jpg' %}"><i class="fas fa-caret-down"></i></a>
+                    </div>                   
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="{% static 'images/profile-pic.jpg' %}">
+                        <div>
+                            <p>Gia Phước</p>
+                            <span>June 24 2021, 13:40 .</span><i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div> 
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a> 
+                </div>
+                
+                <p class="post-text">Thích và chia sẻ mạng xã hội đến với bạn bè<span>@Xin chào mọi</span> người đến với mạng xã hội của tôi. Đăng lên trang của bạn. Cùng bình luận, chia sẻ <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <img src="{% static 'images/Anh-thien-nhien-4.jpg' %}" class="post-img">
+                <div class="post-row">
+                    <div class="left-like">
+                        <div class="like"><a href="#"><img src="{% static 'images/like.png' %}"></a>888</div>
+                    </div>
+                    <div class="right-comments">
+                        <div class="comments">868 bình luận<a href="#"><img src="{% static 'images/comments.png' %}"></a></div>
+                        <div class="share">88 lượt chia sẻ<a href="#"><img src="{% static 'images/share.png' %}"></a></div>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="post-row2">
+                    <div class="activity-icons2">
+                        <div class="like-row2"><a href="#"><img src="{% static 'images/yeslike.png' %}"></a>Thích</div>                        
+                        <div class="comments-row2"><a href="#"><img src="{% static 'images/comments.png' %}"></a>Bình luận</div>
+                        <div class="share-row2"><a href="#"><img src="{% static 'images/share.png' %}"></a>Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon2"> 
+                        <a href="#"><img src="{% static 'images/profile-pic.jpg' %}"><i class="fas fa-caret-down"></i></a>
+                    </div>                   
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="{% static 'images/profile-pic.jpg' %}">
+                        <div>
+                            <p>Gia Phước</p>
+                            <span>June 24 2021, 13:40 .</span><i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div> 
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a> 
+                </div>
+                
+                <p class="post-text">Thích và chia sẻ mạng xã hội đến với bạn bè<span>@Xin chào mọi</span> người đến với mạng xã hội của tôi. Đăng lên trang của bạn. Cùng bình luận, chia sẻ <a href="#">#EasyTutorials</a> <a href="#">#YouTubeChannel</a></p>
+                <img src="{% static 'images/Anh-thien-nhien-5.jpg' %}" class="post-img">
+                <div class="post-row">
+                    <div class="left-like">
+                        <div class="like"><a href="#"><img src="{% static 'images/like.png' %}"></a>126k</div>
+                    </div>
+                    <div class="right-comments">
+                        <div class="comments">5k bình luận<a href="#"><img src="{% static 'images/comments.png' %}"></a></div>
+                        <div class="share">2k lượt chia sẻ<a href="#"><img src="{% static 'images/share.png' %}"></a></div>
+                    </div>                      
+                </div>
+                <hr>
+                <div class="post-row2">
+                    <div class="activity-icons2">
+                        <div class="like-row2"><a href="#"><img src="{% static 'images/yeslike.png' %}"></a>Thích</div>                        
+                        <div class="comments-row2"><a href="#"><img src="{% static 'images/comments.png' %}"></a>Bình luận</div>
+                        <div class="share-row2"><a href="#"><img src="{% static 'images/share.png' %}"></a>Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon2"> 
+                        <a href="#"><img src="{% static 'images/profile-pic.jpg' %}"><i class="fas fa-caret-down"></i></a>
+                    </div>                   
+                </div>
+            </div>
+            <!-- End Post-container----------------- -->
+            <button type="button" class="load-more-btn">End of post</button>
+
+
+        </div> 
+
+        <!--------------- right-sidebar-------------------------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="{% static 'images/ads.png' %}" class="sidebar-ads">
+            
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/gdragon.jpg' %}">
+                </div>
+                <p>G-Dragon</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/jennie.jpg' %}">
+                </div>
+                <p>Jennie</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/sontung.jpg' %}">
+                </div>
+                <p>SonTungMTP</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/rose.jpg' %}">
+                </div>
+                <p>Rose</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/gdragon.jpg' %}">
+                </div>
+                <p>G-Dragon</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/jennie.jpg' %}">
+                </div>
+                <p>Jennie</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/sontung.jpg' %}">
+                </div>
+                <p>SonTungMTP</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/rose.jpg' %}">
+                </div>
+                <p>Rose</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/gdragon.jpg' %}">
+                </div>
+                <p>G-Dragon</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/jennie.jpg' %}">
+                </div>
+                <p>Jennie</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/sontung.jpg' %}">
+                </div>
+                <p>SonTungMTP</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="{% static 'images/rose.jpg' %}">
+                </div>
+                <p>Rose</p>
+            </div>
+        </div>
+    {% endblock %}
+
+

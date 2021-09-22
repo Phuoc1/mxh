@@ -1,0 +1,11 @@
+{% if request.session.Email %}
+    {{ request.session.Email }} &nbsp;&nbsp; <a href="{% url 'loginsys:Logout' %}">Logout</a>
+    
+{% else %}
+    <h1>Trang index Login Logout Register</h1>
+    <hr/>
+    <b>
+        <a href="{% url 'loginsys:Reg' %}">Registration</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="{% url 'loginsys:Loginpage' %}">Login</a>
+    </b>
+{% endif %}

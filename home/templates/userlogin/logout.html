@@ -1,0 +1,67 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">        
+    <title>MXH - Đăng nhập hoặc đăng ký</title>
+</head>
+<body class="bodylogin">
+    <div class="Login">
+        <form action="" method="post" >
+            {% csrf_token %}
+            <img src="{% static 'images/logo1png.png' %}" class="logologin">
+            <br>
+            <div style='color:red;' class="doclogin">
+                Bạn đã đăng xuất khỏi tài khoản !
+                <br> Đăng nhập lại tại đây:
+            </div>            
+            <input type="text" name="tendangnhap" placeholder="Tên Đăng Nhập" class="input_login" required="True">
+            <br>
+            <input type="password" name="matkhau" placeholder="Mật khẩu" class="input_login" required="True">
+            <br>
+            <input type="submit" value="Đăng Nhập" class="nut_login">           
+        </form>
+            <hr/>
+            <a href="{% url 'home:register' %}"><button class="nut_register">Tạo Tài Khoản Mới</button></a>
+    </div>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">        
+    <title>MXH - Đăng nhập hoặc đăng ký</title>
+</head>
+<body class="bodylogin">
+    <div class="logologin">
+        <img src="{% static 'images/logo1png.png' %}" >
+    </div>
+    <div class="Login">
+        <form action="" method="post" >
+            {% csrf_token %}
+            <br>
+            <div style='color:red;' class="doclogin">
+                Bạn đã đăng xuất khỏi tài khoản !
+                <br> Đăng nhập lại tại đây:
+            </div>
+            <input type="text" name="tendangnhap" placeholder="Tên Đăng Nhập" class="input_login" required="True">
+            <br>
+            <input type="password" name="matkhau" placeholder="Mật khẩu" class="input_login" required="True">
+            <br>
+            <input type="submit" value="Đăng Nhập" class="nut_login">           
+        </form>
+            <hr/>
+            <a href="{% url 'home:register' %}"><button class="nut_register">Tạo Tài Khoản Mới</button></a>
+    </div>
+</body>
+</html>

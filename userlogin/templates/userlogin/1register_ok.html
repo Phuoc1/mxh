@@ -1,0 +1,9 @@
+{% extends 'home/base.html' %}
+    {% load static %}
+    {% block content %}
+        <div>
+            <h1>Xin chao ban da DANG KY THANH CONG </h1>
+            <h1>Xin chao Thanh Vien {{ user.username }} </h1>
+            <a href="{% url 'login' %}">Dang Nhap Ngay Thoi</a>
+        </div>
+{% endblock %}
