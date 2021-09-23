@@ -463,6 +463,10 @@ nav{
     justify-content: space-between;
     margin: 12px 0;
     margin-bottom: -10px;
+    width: 580px;
+}
+.activity-icons2{
+    margin-left: 0px;
 }
 .activity-icons2 div img{
     width: 20px;
@@ -472,28 +476,44 @@ nav{
     display: inline-flex;
     align-items: center;
 }
-.activity-icons2 .like-row2{
-    margin-left: 35px;
+.like-row2{
+    display: flex;
+    margin-left: 40px;
 }
-.activity-icons2 .comments-row2{
-    margin-left: 85px;
+.comments-row2{
+    display: flex;
+    margin-right: 90px;
 }
-.activity-icons2 .share-row2{
-    margin-left: 65px; 
+.share-row2{
+/*    margin-left: 68px; */
+    display: flex;  
+    margin-right: 70px;
 }
 
 
 .post-profile-icon2{
     display: flex;
     align-items: center;
+    margin-right: 0px;
 }
-
 .post-profile-icon2 img{
-    width: 22px;
+    display: flex;
+    width: 22px; 
     border-radius: 50%;
     margin-right: 4px;
 }
-.post-profile-icon2 a {
+.post-profile-icon2 .profile-cuoi{
+    display: flex;
+    margin-right: 0px;
+}
+.post-profile-icon2 .profile-cuoi img{
+    display: flex;
+    align-items: center;
+    width: 22px; 
+    border-radius: 50%;
+    margin-right: 0px;
+}
+.post-profile-icon2 .profile-cuoi a{
     display: flex;
 }
 /*  END TU SUA *********************************************************/
