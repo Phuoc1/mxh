@@ -506,13 +506,6 @@ nav{
     display: flex;
     margin-right: 0px;
 }
-.post-profile-icon2 .profile-cuoi img{
-    display: flex;
-    align-items: center;
-    width: 22px; 
-    border-radius: 50%;
-    margin-right: 4px;
-}
 .post-profile-icon2 .profile-cuoi a{
     display: flex;
 }
