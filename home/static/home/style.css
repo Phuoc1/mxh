@@ -511,7 +511,7 @@ nav{
     align-items: center;
     width: 22px; 
     border-radius: 50%;
-    margin-right: 0px;
+    margin-right: 4px;
 }
 .post-profile-icon2 .profile-cuoi a{
     display: flex;
