@@ -499,7 +499,6 @@ nav{
 .post-profile-icon2 img{
     display: flex;
     width: 22px; 
-    border-radius: 50%;
     margin-right: 4px;
 }
 .post-profile-icon2 .profile-cuoi{
