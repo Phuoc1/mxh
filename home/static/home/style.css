@@ -509,6 +509,10 @@ nav{
 .post-profile-icon2 .profile-cuoi a{
     display: flex;
 }
+.post-profile-icon2 .profile-cuoi img{
+    display: flex;
+    border-radius: 50%;
+}
 /*  END TU SUA *********************************************************/
 
 
